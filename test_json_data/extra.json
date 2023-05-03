@@ -1,0 +1,380 @@
+{
+    "links": {
+        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:5f1658cd-6299-4c74-b2cc-0a7f02cf0a3c"
+    },
+    "data": {
+        "type": "entity",
+        "id": "experiment:5f1658cd-6299-4c74-b2cc-0a7f02cf0a3c",
+        "links": {
+            "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:5f1658cd-6299-4c74-b2cc-0a7f02cf0a3c"
+        },
+        "attributes": {
+            "id": "experiment:5f1658cd-6299-4c74-b2cc-0a7f02cf0a3c",
+            "eid": "experiment:5f1658cd-6299-4c74-b2cc-0a7f02cf0a3c",
+            "name": "Analysis",
+            "description": "Test Generic Analysis Template",
+            "createdAt": "2023-03-14T11:10:34.506Z",
+            "editedAt": "2023-03-14T11:34:11.801Z",
+            "type": "experiment",
+            "digest": "58577513",
+            "fields": {
+                "Client facing": {
+                    "value": "No"
+                },
+                "Description": {
+                    "value": "Test Generic Analysis Template"
+                },
+                "Function": {
+                    "value": "AnalytiSci"
+                },
+                "Name": {
+                    "value": "Analysis"
+                },
+                "Project Code": {
+                    "value": ""
+                },
+                "Project Description": {
+                    "value": ""
+                },
+                "Site": {
+                    "value": "Cardiff 1"
+                }
+            },
+            "flags": {
+                "isTrashed": true
+            }
+        },
+        "relationships": {
+            "createdBy": {
+                "links": {
+                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/130"
+                },
+                "data": {
+                    "type": "user",
+                    "id": "130"
+                }
+            },
+            "editedBy": {
+                "links": {
+                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/153"
+                },
+                "data": {
+                    "type": "user",
+                    "id": "153"
+                }
+            },
+            "children": {
+                "links": {
+                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:5f1658cd-6299-4c74-b2cc-0a7f02cf0a3c/children"
+                },
+                "data": [
+                    {
+                        "type": "entity",
+                        "id": "text:8c64e0f8-3a9b-4a77-bf91-ca4461fef338",
+                        "meta": {
+                            "links": {
+                                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:8c64e0f8-3a9b-4a77-bf91-ca4461fef338"
+                            }
+                        }
+                    },
+                    {
+                        "type": "entity",
+                        "id": "text:8b57db23-093e-41f4-a59d-84e63560788d",
+                        "meta": {
+                            "links": {
+                                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:8b57db23-093e-41f4-a59d-84e63560788d"
+                            }
+                        }
+                    },
+                    {
+                        "type": "entity",
+                        "id": "materialsTable:e4d2c313-cd6a-484d-b2b5-dcbf97ef8884",
+                        "meta": {
+                            "links": {
+                                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/materialsTable:e4d2c313-cd6a-484d-b2b5-dcbf97ef8884"
+                            }
+                        }
+                    },
+                    {
+                        "type": "entity",
+                        "id": "text:acb5e2e8-5dc9-4b1a-a55e-48e81949a5d8",
+                        "meta": {
+                            "links": {
+                                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:acb5e2e8-5dc9-4b1a-a55e-48e81949a5d8"
+                            }
+                        }
+                    },
+                    {
+                        "type": "entity",
+                        "id": "materialsTable:77bfe3fd-6d8b-44ee-9391-a124015b98d9",
+                        "meta": {
+                            "links": {
+                                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/materialsTable:77bfe3fd-6d8b-44ee-9391-a124015b98d9"
+                            }
+                        }
+                    },
+                    {
+                        "type": "entity",
+                        "id": "text:3e802edf-a3c2-4c1e-886c-70b6c3783067",
+                        "meta": {
+                            "links": {
+                                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:3e802edf-a3c2-4c1e-886c-70b6c3783067"
+                            }
+                        }
+                    },
+                    {
+                        "type": "entity",
+                        "id": "text:9572657f-2038-4a40-8827-b6d5d4f0ee21",
+                        "meta": {
+                            "links": {
+                                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:9572657f-2038-4a40-8827-b6d5d4f0ee21"
+                            }
+                        }
+                    },
+                    {
+                        "type": "entity",
+                        "id": "grid:178d9d8b-4114-49a0-8054-f811d577abe5",
+                        "meta": {
+                            "links": {
+                                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/grid:178d9d8b-4114-49a0-8054-f811d577abe5"
+                            }
+                        }
+                    }
+                ]
+            },
+            "owner": {
+                "links": {
+                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/130"
+                },
+                "data": {
+                    "type": "user",
+                    "id": "130"
+                }
+            },
+            "pdf": {
+                "links": {
+                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:5f1658cd-6299-4c74-b2cc-0a7f02cf0a3c/pdf"
+                }
+            }
+        }
+    },
+    "included": [
+        {
+            "type": "entity",
+            "id": "text:8c64e0f8-3a9b-4a77-bf91-ca4461fef338",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:8c64e0f8-3a9b-4a77-bf91-ca4461fef338"
+            },
+            "attributes": {
+                "type": "text",
+                "eid": "text:8c64e0f8-3a9b-4a77-bf91-ca4461fef338",
+                "name": "Aim",
+                "digest": "58577513",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Aim"
+                    }
+                }
+            }
+        },
+        {
+            "type": "user",
+            "id": "153",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/153"
+            },
+            "attributes": {
+                "userId": "153",
+                "userName": "patrick.mann@catsci.com",
+                "email": "patrick.mann@catsci.com",
+                "firstName": "Patrick",
+                "lastName": "Mann",
+                "isEnabled": true
+            },
+            "relationships": {
+                "picture": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/153/picture"
+                    }
+                },
+                "systemGroups": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/153/systemGroups"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "text:8b57db23-093e-41f4-a59d-84e63560788d",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:8b57db23-093e-41f4-a59d-84e63560788d"
+            },
+            "attributes": {
+                "type": "text",
+                "eid": "text:8b57db23-093e-41f4-a59d-84e63560788d",
+                "name": "COSHH",
+                "digest": "58577513",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "COSHH"
+                    }
+                }
+            }
+        },
+        {
+            "type": "user",
+            "id": "130",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/130"
+            },
+            "attributes": {
+                "userId": "130",
+                "userName": "eleanor.goodier@catsci.com",
+                "email": "eleanor.goodier@catsci.com",
+                "firstName": "Eleanor",
+                "lastName": "Goodier",
+                "isEnabled": true
+            },
+            "relationships": {
+                "systemGroups": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/130/systemGroups"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "text:3e802edf-a3c2-4c1e-886c-70b6c3783067",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:3e802edf-a3c2-4c1e-886c-70b6c3783067"
+            },
+            "attributes": {
+                "type": "text",
+                "eid": "text:3e802edf-a3c2-4c1e-886c-70b6c3783067",
+                "name": "Procedure",
+                "digest": "58577513",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Procedure"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "text:9572657f-2038-4a40-8827-b6d5d4f0ee21",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:9572657f-2038-4a40-8827-b6d5d4f0ee21"
+            },
+            "attributes": {
+                "type": "text",
+                "eid": "text:9572657f-2038-4a40-8827-b6d5d4f0ee21",
+                "name": "Results",
+                "digest": "58577513",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Results"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "grid:178d9d8b-4114-49a0-8054-f811d577abe5",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/grid:178d9d8b-4114-49a0-8054-f811d577abe5"
+            },
+            "attributes": {
+                "type": "grid",
+                "eid": "grid:178d9d8b-4114-49a0-8054-f811d577abe5",
+                "name": "Risk Factors-1",
+                "digest": "58577513",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Risk Factors-1"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "materialsTable:e4d2c313-cd6a-484d-b2b5-dcbf97ef8884",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/materialsTable:e4d2c313-cd6a-484d-b2b5-dcbf97ef8884"
+            },
+            "attributes": {
+                "type": "materialsTable",
+                "eid": "materialsTable:e4d2c313-cd6a-484d-b2b5-dcbf97ef8884",
+                "name": "Compounds",
+                "digest": "58577513",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Compounds"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "text:acb5e2e8-5dc9-4b1a-a55e-48e81949a5d8",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:acb5e2e8-5dc9-4b1a-a55e-48e81949a5d8"
+            },
+            "attributes": {
+                "type": "text",
+                "eid": "text:acb5e2e8-5dc9-4b1a-a55e-48e81949a5d8",
+                "name": "Conclusion",
+                "digest": "58577513",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Conclusion"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "materialsTable:77bfe3fd-6d8b-44ee-9391-a124015b98d9",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/materialsTable:77bfe3fd-6d8b-44ee-9391-a124015b98d9"
+            },
+            "attributes": {
+                "type": "materialsTable",
+                "eid": "materialsTable:77bfe3fd-6d8b-44ee-9391-a124015b98d9",
+                "name": "Equipment",
+                "digest": "58577513",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Equipment"
+                    }
+                }
+            }
+        }
+    ]
+}

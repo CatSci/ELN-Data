@@ -1,0 +1,990 @@
+{
+    "links": {
+        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:a9a71533-531e-4020-98d9-205fde793994/children?page[offset]=0&page[limit]=20",
+        "first": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:a9a71533-531e-4020-98d9-205fde793994/children?page[offset]=0&page[limit]=20"
+    },
+    "data": [
+        {
+            "type": "entity",
+            "id": "text:f8e901be-0f53-40fb-b940-d7118608c13c",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:f8e901be-0f53-40fb-b940-d7118608c13c"
+            },
+            "attributes": {
+                "id": "text:f8e901be-0f53-40fb-b940-d7118608c13c",
+                "eid": "text:f8e901be-0f53-40fb-b940-d7118608c13c",
+                "name": "Aims",
+                "description": "",
+                "createdAt": "2023-04-20T08:41:29.984Z",
+                "editedAt": "2023-04-20T08:58:20.552Z",
+                "type": "text",
+                "digest": "34426760",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Aims"
+                    }
+                },
+                "flags": {
+                    "canEdit": true,
+                    "isMandatory": true
+                }
+            },
+            "relationships": {
+                "createdBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "editedBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "ancestors": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:f8e901be-0f53-40fb-b940-d7118608c13c/ancestors"
+                    },
+                    "data": [
+                        {
+                            "type": "entity",
+                            "id": "journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b"
+                                }
+                            }
+                        },
+                        {
+                            "type": "entity",
+                            "id": "experiment:a9a71533-531e-4020-98d9-205fde793994",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:a9a71533-531e-4020-98d9-205fde793994"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "owner": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "source": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:f8e901be-0f53-40fb-b940-d7118608c13c/export"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "text:7455666b-a9e2-4fea-94c2-7dbda8de45df",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:7455666b-a9e2-4fea-94c2-7dbda8de45df"
+            },
+            "attributes": {
+                "id": "text:7455666b-a9e2-4fea-94c2-7dbda8de45df",
+                "eid": "text:7455666b-a9e2-4fea-94c2-7dbda8de45df",
+                "name": "Analytical results",
+                "description": "",
+                "createdAt": "2023-04-20T08:41:29.984Z",
+                "editedAt": "2023-04-20T08:41:29.984Z",
+                "type": "text",
+                "digest": "0",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Analytical results"
+                    }
+                },
+                "flags": {
+                    "canEdit": true,
+                    "isMandatory": true
+                }
+            },
+            "relationships": {
+                "createdBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "editedBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "ancestors": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:7455666b-a9e2-4fea-94c2-7dbda8de45df/ancestors"
+                    },
+                    "data": [
+                        {
+                            "type": "entity",
+                            "id": "journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b"
+                                }
+                            }
+                        },
+                        {
+                            "type": "entity",
+                            "id": "experiment:a9a71533-531e-4020-98d9-205fde793994",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:a9a71533-531e-4020-98d9-205fde793994"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "owner": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "source": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:7455666b-a9e2-4fea-94c2-7dbda8de45df/export"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "text:c49edca5-6187-42d4-90fd-2d8802d9ac9b",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:c49edca5-6187-42d4-90fd-2d8802d9ac9b"
+            },
+            "attributes": {
+                "id": "text:c49edca5-6187-42d4-90fd-2d8802d9ac9b",
+                "eid": "text:c49edca5-6187-42d4-90fd-2d8802d9ac9b",
+                "name": "Conclusions",
+                "description": "",
+                "createdAt": "2023-04-20T08:41:29.984Z",
+                "editedAt": "2023-04-20T08:41:29.984Z",
+                "type": "text",
+                "digest": "0",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Conclusions"
+                    }
+                },
+                "flags": {
+                    "canEdit": true,
+                    "isMandatory": true
+                }
+            },
+            "relationships": {
+                "createdBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "editedBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "ancestors": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:c49edca5-6187-42d4-90fd-2d8802d9ac9b/ancestors"
+                    },
+                    "data": [
+                        {
+                            "type": "entity",
+                            "id": "journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b"
+                                }
+                            }
+                        },
+                        {
+                            "type": "entity",
+                            "id": "experiment:a9a71533-531e-4020-98d9-205fde793994",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:a9a71533-531e-4020-98d9-205fde793994"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "owner": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "source": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:c49edca5-6187-42d4-90fd-2d8802d9ac9b/export"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "grid:a120ebab-7e06-4b9c-b197-7a2f279acef8",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/grid:a120ebab-7e06-4b9c-b197-7a2f279acef8"
+            },
+            "attributes": {
+                "id": "grid:a120ebab-7e06-4b9c-b197-7a2f279acef8",
+                "eid": "grid:a120ebab-7e06-4b9c-b197-7a2f279acef8",
+                "name": "Experiment Category",
+                "description": "",
+                "createdAt": "2023-04-20T08:41:29.984Z",
+                "editedAt": "2023-04-20T08:55:00.767Z",
+                "type": "grid",
+                "digest": "50046674",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Experiment Category"
+                    }
+                },
+                "flags": {
+                    "canEdit": true,
+                    "isMandatory": true
+                }
+            },
+            "relationships": {
+                "createdBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "editedBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "ancestors": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/grid:a120ebab-7e06-4b9c-b197-7a2f279acef8/ancestors"
+                    },
+                    "data": [
+                        {
+                            "type": "entity",
+                            "id": "journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b"
+                                }
+                            }
+                        },
+                        {
+                            "type": "entity",
+                            "id": "experiment:a9a71533-531e-4020-98d9-205fde793994",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:a9a71533-531e-4020-98d9-205fde793994"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "owner": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "source": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/grid:a120ebab-7e06-4b9c-b197-7a2f279acef8/export"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "grid:7ad1f318-e0a6-477c-82b8-2fe574f3eee3",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/grid:7ad1f318-e0a6-477c-82b8-2fe574f3eee3"
+            },
+            "attributes": {
+                "id": "grid:7ad1f318-e0a6-477c-82b8-2fe574f3eee3",
+                "eid": "grid:7ad1f318-e0a6-477c-82b8-2fe574f3eee3",
+                "name": "Risk Factors",
+                "description": "",
+                "createdAt": "2023-04-20T08:41:29.984Z",
+                "editedAt": "2023-04-20T08:41:29.984Z",
+                "type": "grid",
+                "digest": "0",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Risk Factors"
+                    }
+                },
+                "flags": {
+                    "canEdit": true,
+                    "isMandatory": true
+                }
+            },
+            "relationships": {
+                "createdBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "editedBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "ancestors": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/grid:7ad1f318-e0a6-477c-82b8-2fe574f3eee3/ancestors"
+                    },
+                    "data": [
+                        {
+                            "type": "entity",
+                            "id": "journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b"
+                                }
+                            }
+                        },
+                        {
+                            "type": "entity",
+                            "id": "experiment:a9a71533-531e-4020-98d9-205fde793994",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:a9a71533-531e-4020-98d9-205fde793994"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "owner": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "source": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/grid:7ad1f318-e0a6-477c-82b8-2fe574f3eee3/export"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "text:d44f835a-151e-4b1a-9fb7-1082626d103d",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:d44f835a-151e-4b1a-9fb7-1082626d103d"
+            },
+            "attributes": {
+                "id": "text:d44f835a-151e-4b1a-9fb7-1082626d103d",
+                "eid": "text:d44f835a-151e-4b1a-9fb7-1082626d103d",
+                "name": "Literature",
+                "description": "",
+                "createdAt": "2023-04-20T08:41:29.984Z",
+                "editedAt": "2023-04-20T08:41:29.984Z",
+                "type": "text",
+                "digest": "0",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Literature"
+                    }
+                },
+                "flags": {
+                    "canEdit": true
+                }
+            },
+            "relationships": {
+                "createdBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "editedBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "ancestors": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:d44f835a-151e-4b1a-9fb7-1082626d103d/ancestors"
+                    },
+                    "data": [
+                        {
+                            "type": "entity",
+                            "id": "journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b"
+                                }
+                            }
+                        },
+                        {
+                            "type": "entity",
+                            "id": "experiment:a9a71533-531e-4020-98d9-205fde793994",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:a9a71533-531e-4020-98d9-205fde793994"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "owner": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "source": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:d44f835a-151e-4b1a-9fb7-1082626d103d/export"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "text:6dae5e21-7cef-4914-8a8f-1a66a5b94ee6",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:6dae5e21-7cef-4914-8a8f-1a66a5b94ee6"
+            },
+            "attributes": {
+                "id": "text:6dae5e21-7cef-4914-8a8f-1a66a5b94ee6",
+                "eid": "text:6dae5e21-7cef-4914-8a8f-1a66a5b94ee6",
+                "name": "Procedure",
+                "description": "",
+                "createdAt": "2023-04-20T08:41:29.984Z",
+                "editedAt": "2023-04-20T09:19:46.239Z",
+                "type": "text",
+                "digest": "31738134",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Procedure"
+                    }
+                },
+                "flags": {
+                    "canEdit": true,
+                    "isMandatory": true
+                }
+            },
+            "relationships": {
+                "createdBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "editedBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "ancestors": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:6dae5e21-7cef-4914-8a8f-1a66a5b94ee6/ancestors"
+                    },
+                    "data": [
+                        {
+                            "type": "entity",
+                            "id": "journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b"
+                                }
+                            }
+                        },
+                        {
+                            "type": "entity",
+                            "id": "experiment:a9a71533-531e-4020-98d9-205fde793994",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:a9a71533-531e-4020-98d9-205fde793994"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "owner": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "source": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:6dae5e21-7cef-4914-8a8f-1a66a5b94ee6/export"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "text:a9821abe-ca76-407f-8714-7c0ad5b3cf1a",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:a9821abe-ca76-407f-8714-7c0ad5b3cf1a"
+            },
+            "attributes": {
+                "id": "text:a9821abe-ca76-407f-8714-7c0ad5b3cf1a",
+                "eid": "text:a9821abe-ca76-407f-8714-7c0ad5b3cf1a",
+                "name": "COSHH",
+                "description": "",
+                "createdAt": "2023-04-20T08:41:29.984Z",
+                "editedAt": "2023-04-20T09:24:41.391Z",
+                "type": "text",
+                "digest": "45301366",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "COSHH"
+                    }
+                },
+                "flags": {
+                    "canEdit": true,
+                    "isMandatory": true
+                }
+            },
+            "relationships": {
+                "createdBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "editedBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "ancestors": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:a9821abe-ca76-407f-8714-7c0ad5b3cf1a/ancestors"
+                    },
+                    "data": [
+                        {
+                            "type": "entity",
+                            "id": "journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b"
+                                }
+                            }
+                        },
+                        {
+                            "type": "entity",
+                            "id": "experiment:a9a71533-531e-4020-98d9-205fde793994",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:a9a71533-531e-4020-98d9-205fde793994"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "owner": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "source": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/text:a9821abe-ca76-407f-8714-7c0ad5b3cf1a/export"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "chemicalDrawing:dea42540-e11b-4b6a-9194-f67deecd30cf",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/chemicalDrawing:dea42540-e11b-4b6a-9194-f67deecd30cf"
+            },
+            "attributes": {
+                "id": "chemicalDrawing:dea42540-e11b-4b6a-9194-f67deecd30cf",
+                "eid": "chemicalDrawing:dea42540-e11b-4b6a-9194-f67deecd30cf",
+                "name": "Reaction scheme",
+                "description": "",
+                "createdAt": "2023-04-20T08:41:29.984Z",
+                "editedAt": "2023-04-20T08:41:29.984Z",
+                "type": "chemicalDrawing",
+                "digest": "0",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Reaction scheme"
+                    }
+                },
+                "flags": {
+                    "canEdit": true,
+                    "isMandatory": true
+                }
+            },
+            "relationships": {
+                "createdBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "editedBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "ancestors": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/chemicalDrawing:dea42540-e11b-4b6a-9194-f67deecd30cf/ancestors"
+                    },
+                    "data": [
+                        {
+                            "type": "entity",
+                            "id": "journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b"
+                                }
+                            }
+                        },
+                        {
+                            "type": "entity",
+                            "id": "experiment:a9a71533-531e-4020-98d9-205fde793994",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:a9a71533-531e-4020-98d9-205fde793994"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "owner": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "drawing": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/chemicalDrawing:dea42540-e11b-4b6a-9194-f67deecd30cf/export?format=cdxml"
+                    }
+                },
+                "stoichiometry": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/stoichiometry/chemicalDrawing:dea42540-e11b-4b6a-9194-f67deecd30cf"
+                    }
+                }
+            }
+        },
+        {
+            "type": "entity",
+            "id": "grid:1d17c973-68f5-4262-ac72-b7c2e7d4eb85",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/grid:1d17c973-68f5-4262-ac72-b7c2e7d4eb85"
+            },
+            "attributes": {
+                "id": "grid:1d17c973-68f5-4262-ac72-b7c2e7d4eb85",
+                "eid": "grid:1d17c973-68f5-4262-ac72-b7c2e7d4eb85",
+                "name": "Experiment links",
+                "description": "",
+                "createdAt": "2023-04-20T08:41:29.984Z",
+                "editedAt": "2023-04-20T08:59:11.697Z",
+                "type": "grid",
+                "digest": "53085678",
+                "fields": {
+                    "Description": {
+                        "value": ""
+                    },
+                    "Name": {
+                        "value": "Experiment links"
+                    }
+                },
+                "flags": {
+                    "canEdit": true,
+                    "isMandatory": true
+                }
+            },
+            "relationships": {
+                "createdBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "editedBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "ancestors": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/grid:1d17c973-68f5-4262-ac72-b7c2e7d4eb85/ancestors"
+                    },
+                    "data": [
+                        {
+                            "type": "entity",
+                            "id": "journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b"
+                                }
+                            }
+                        },
+                        {
+                            "type": "entity",
+                            "id": "experiment:a9a71533-531e-4020-98d9-205fde793994",
+                            "meta": {
+                                "links": {
+                                    "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:a9a71533-531e-4020-98d9-205fde793994"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "owner": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "126"
+                    }
+                },
+                "source": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/grid:1d17c973-68f5-4262-ac72-b7c2e7d4eb85/export"
+                    }
+                }
+            }
+        }
+    ],
+    "included": [
+        {
+            "type": "entity",
+            "id": "experiment:a9a71533-531e-4020-98d9-205fde793994",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:a9a71533-531e-4020-98d9-205fde793994"
+            },
+            "attributes": {
+                "type": "experiment",
+                "eid": "experiment:a9a71533-531e-4020-98d9-205fde793994",
+                "name": "ELN1012-005",
+                "digest": "57659913",
+                "fields": {
+                    "Client facing": {
+                        "value": "No"
+                    },
+                    "Description": {
+                        "value": "BMT-096: Crystal16 Solubility in 2-MeTHF"
+                    },
+                    "Function": {
+                        "value": "MatSci"
+                    },
+                    "Name": {
+                        "value": "ELN1012-005"
+                    },
+                    "Project Code": {
+                        "value": "CS73-232"
+                    },
+                    "Project Description": {
+                        "value": "986158"
+                    },
+                    "Site": {
+                        "value": "Cardiff"
+                    }
+                },
+                "flags": {}
+            }
+        },
+        {
+            "type": "entity",
+            "id": "journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b"
+            },
+            "attributes": {
+                "type": "journal",
+                "eid": "journal:6e0ea840-2916-4d15-8e1b-4ce064d21b9b",
+                "name": "ELN1012",
+                "digest": "15795517",
+                "fields": {
+                    "Client facing": {
+                        "value": "No"
+                    },
+                    "Description": {
+                        "value": "BMS-158 (CS73-232)"
+                    },
+                    "Function": {
+                        "value": "MatSci"
+                    },
+                    "Name": {
+                        "value": "ELN1012"
+                    },
+                    "Project": {
+                        "value": "CS73-232"
+                    },
+                    "Project description": {
+                        "value": "986158"
+                    },
+                    "Site": {
+                        "value": "Cardiff"
+                    }
+                },
+                "flags": {}
+            }
+        },
+        {
+            "type": "user",
+            "id": "126",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126"
+            },
+            "attributes": {
+                "userId": "126",
+                "userName": "corin.mack@catsci.com",
+                "email": "corin.mack@catsci.com",
+                "firstName": "Corin",
+                "lastName": "Mack",
+                "isEnabled": true
+            },
+            "relationships": {
+                "systemGroups": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/126/systemGroups"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "links": {
+        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/experiment:73614540-d1e1-488c-ab09-b565360220d5/ancestors"
+    },
+    "data": [
+        {
+            "type": "entity",
+            "id": "journal:57daf092-ed5a-40d0-b3e3-e945298a19c9",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/journal:57daf092-ed5a-40d0-b3e3-e945298a19c9"
+            },
+            "attributes": {
+                "id": "journal:57daf092-ed5a-40d0-b3e3-e945298a19c9",
+                "eid": "journal:57daf092-ed5a-40d0-b3e3-e945298a19c9",
+                "name": "ELN1015",
+                "description": "FZ Test parallel screen notebook",
+                "createdAt": "2023-04-20T09:23:43.142Z",
+                "editedAt": "2023-04-20T09:23:43.142Z",
+                "type": "journal",
+                "digest": "46762779",
+                "fields": {
+                    "Client facing": {
+                        "value": "No"
+                    },
+                    "Description": {
+                        "value": "FZ Test parallel screen notebook"
+                    },
+                    "Function": {
+                        "value": "ChemSci"
+                    },
+                    "Name": {
+                        "value": "ELN1015"
+                    },
+                    "Project": {
+                        "value": "CS73-243"
+                    },
+                    "Project description": {
+                        "value": "BMS Ni OAc"
+                    },
+                    "Site": {
+                        "value": "Cardiff"
+                    }
+                }
+            },
+            "relationships": {
+                "createdBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/124"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "124"
+                    }
+                },
+                "editedBy": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/124"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "124"
+                    }
+                },
+                "owner": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/124"
+                    },
+                    "data": {
+                        "type": "user",
+                        "id": "124"
+                    }
+                },
+                "children": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/entities/journal:57daf092-ed5a-40d0-b3e3-e945298a19c9/children"
+                    }
+                }
+            }
+        }
+    ],
+    "included": [
+        {
+            "type": "user",
+            "id": "124",
+            "links": {
+                "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/124"
+            },
+            "attributes": {
+                "userId": "124",
+                "userName": "frank.zieleniewski@catsci.com",
+                "email": "frank.zieleniewski@catsci.com",
+                "firstName": "Frank",
+                "lastName": "Zieleniewski",
+                "isEnabled": true
+            },
+            "relationships": {
+                "systemGroups": {
+                    "links": {
+                        "self": "https://catsci-sandbox.signalsnotebook.perkinelmercloud.eu/api/rest/v1.0/users/124/systemGroups"
+                    }
+                }
+            }
+        }
+    ]
+}
