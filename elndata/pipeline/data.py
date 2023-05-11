@@ -1,6 +1,7 @@
 from elndata.components.data_extraction import DataExtraction
-from elndata.entity.config_entity import Data,DataExtractionConfig
+from elndata.entity.config_entity import Data,DataExtractionConfig, DatabaseConfig
 from elndata.entity.artifact_entity import DataExtractionArtifact
+from elndata.components.postgresql import Database
 from elndata.constant.data import *
 from elndata.utils.main import save_csv
 from elndata.exception import ELNException
@@ -14,6 +15,7 @@ class Pipeline:
 
     def __init__(self):
         self.data_config = Data()
+        self.database = Database(database_config= DatabaseConfig())
 
     def start_data_extraction(self)-> DataExtractionArtifact:
         try:
@@ -52,19 +54,34 @@ class Pipeline:
             filter_df = pd.read_csv(pth)
             col_with_check = filter_df['editedAt']
 
-            # checking if columns are same or not and replace the file 
+            # checking if columns values are same or not and if not same then replace the file 
             if not col_to_check.equals(col_with_check):
                 shutil.copy(file_folder, pth)
+                return pth
+            # this pth is the path of file inside artifact/data_extracted/data.csv
+            # if data is changed it will be saved inside this 
+            return pth
+            # return file_folder
 
         except Exception as e:
             raise ELNException(e, sys)
-
+    
+    def push_to_database(self, extracted_data_file_path: str):
+        try:
+            logging.info(f"[INFO] Pushing Data to Database")
+            self.database.execute(extracted_data_file_path= extracted_data_file_path)
+            logging.info(f"[INFO] Data Successfully pushed to database")
+        except Exception as e:
+            raise ELNException(e, sys)
     
     def run_pipeline(self):
         try:
             data_extraction_artifact = self.start_data_extraction()
-            # print(data_extraction_artifact)
-            self.compare_changes(data_extraction_artifact= data_extraction_artifact)
+            extracted_data_file_path:str = self.compare_changes(data_extraction_artifact= data_extraction_artifact)
+            self.push_to_database(extracted_data_file_path = extracted_data_file_path)
+            logging.info("[INFO] Data was successfully added to database")
+            logging.info("[INFO] Success")
+            print('Success!!!')
         except Exception as e:
             raise ELNException(e, sys)
     

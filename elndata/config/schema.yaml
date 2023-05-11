@@ -1,16 +1,15 @@
 columns:
   - eid: str
   - Name: str
-  - Project Code: str
-  - Project Description: str
+  - Project_Code: str
+  - Project_Description: str
   - Description: str
   - Function: str
   - Site: str
-  - Client facing: str
+  - Client_facing: str
   - state: str
   - createdAt : str
   - editedAt: str
   - firstName: str
   - lastName: str
   - email: str
-  

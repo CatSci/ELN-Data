@@ -18,13 +18,10 @@ if __name__ == "__main__":
     try:
         p = Pipeline()
         logging.info('[INFO] Extracting data from ELN started')
-        # data_extraction_config = DataExtractionConfig(data_config= Data())
-        # d = DataExtraction(data_extracttion_config= data_extraction_config)
-        # d.initiate_data_extraction()
         p.run_pipeline()
-        logging.info("[INFO] Extracting data from ELN completed")
+        logging.info("[INFO] Pipeline completed !!!")
     except Exception as e:
-        logging.error["[ERROR] Error occurred while extarcting data"]
+        logging.error["[ERROR] Error occurred while running pipeline"]
         raise ELNException(e, sys)
 
     

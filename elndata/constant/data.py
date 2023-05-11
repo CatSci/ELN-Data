@@ -1,5 +1,7 @@
 import os
 
+env_file = '.env'
+
 SCHEMA_FILE_PATH = os.path.join('elndata','config', 'schema.yaml')
 DATA_DIR: str = 'data'
 YAML_DATA: str = 'data.yaml'
@@ -11,4 +13,6 @@ ARTIFACT_DIR: str = 'artifact'
 DATA_EXTRACTION_DIR: str = 'data'
 # data dir for final data
 DATA_DIR: str = 'data_extracted'
+
+# Final data
 
