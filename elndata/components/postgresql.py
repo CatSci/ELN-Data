@@ -124,7 +124,13 @@ class Database:
             logging.info("[INFO] Creating Table")
             if not self._check_table_exists(table_name= table_name):
                 columns = columns_list
-                columns_str = ", ".join([f'"{col}" VARCHAR(255)' for col in columns])
+                date_time_columns = ['createdAt', 'editedAt']
+                # Define data types for columns
+                data_types = ['VARCHAR(255)' if col not in date_time_columns else 'TIMESTAMP' for col in columns]
+
+                # Combine column names and data types
+                columns_str = ", ".join([f'"{col}" {data_type}' for col, data_type in zip(columns, data_types)])
+                # columns_str = ", ".join([f'"{col}" VARCHAR(255)' for col in columns])
                 
                 create_table_query = f"CREATE TABLE {table_name} ({columns_str}, PRIMARY KEY ({primary_key}))"
                 self.cursor.execute(create_table_query)
@@ -200,7 +206,7 @@ class Database:
                             update_values.append(f'"{field}" = %s')
                             values.append(str(df_value))
             
-                        print(f"values to update {update_values}")
+                        # print(f"values to update {update_values}")
                     if update_values:
                         logging.info("[INFO] Updating some more data into table")
                         update_query += ", ".join(update_values)
@@ -240,8 +246,5 @@ class Database:
             raise ELNException(e, sys)
 
 
-# if __name__ == "__main__":
-#     d = Database(database_config= DatabaseConfig())
-#     d.execute()
 
 

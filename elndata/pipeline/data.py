@@ -57,11 +57,10 @@ class Pipeline:
             # checking if columns values are same or not and if not same then replace the file 
             if not col_to_check.equals(col_with_check):
                 shutil.copy(file_folder, pth)
-                return pth
+                # return pth
             # this pth is the path of file inside artifact/data_extracted/data.csv
             # if data is changed it will be saved inside this 
             return pth
-            # return file_folder
 
         except Exception as e:
             raise ELNException(e, sys)
@@ -78,7 +77,7 @@ class Pipeline:
         try:
             data_extraction_artifact = self.start_data_extraction()
             extracted_data_file_path:str = self.compare_changes(data_extraction_artifact= data_extraction_artifact)
-            self.push_to_database(extracted_data_file_path = extracted_data_file_path)
+            # self.push_to_database(extracted_data_file_path = extracted_data_file_path)
             logging.info("[INFO] Data was successfully added to database")
             logging.info("[INFO] Success")
             print('Success!!!')
