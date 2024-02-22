@@ -16,6 +16,9 @@ from dotenv import load_dotenv
 
 import csv
 
+import asyncio
+import aiohttp
+
 filename = 'text.csv'
 
 def save_text_to_csv(text, filename):
@@ -23,6 +26,12 @@ def save_text_to_csv(text, filename):
         writer = csv.writer(csvfile)
         writer.writerow(['Text'])
         writer.writerow([text])
+
+
+async def fetch_data(session, url):
+    async with session.get(url) as response:
+        return await response.json()
+    
 
 class DataExtraction:
     def __init__(self, data_extraction_config: DataExtractionConfig,
@@ -117,49 +126,43 @@ class DataExtraction:
             raise ELNException(e, sys)
 
 
+    
+
     def export_data(self) -> pd.DataFrame:
-        values= {} 
-        dataframe = self.create_dataframe()
+        values = {}
+        dataframe_list = []
+        
         try:
-            i = 0
-            c = 0
-            url = f"{self.url}?page[offset]={self.offset}&page[limit]={self.num_of_exp}&includeTypes={self.include_types}"
-            while True: 
-                
-                response = self.get_request(url = url)
-                # print(response)
-                self_next_urls = response.json().get('links')
-                # print(f"{i} and url is {self_next_urls}")
-                response_data_urls = requests.get(self_next_urls['self'], headers= self._headers)
+            async with aiohttp.ClientSession(headers=self._headers) as session:
+                i = 0
+                url = f"{self.url}?page[offset]={self.offset}&page[limit]={self.num_of_exp}&includeTypes={self.include_types}"
 
-                content = response_data_urls.json().get('data')
-                data_points = len(response_data_urls.json().get('data'))
+                while True:
+                    response = await fetch_data(session, url)
+                    self_next_urls = response.get('links')
+                    response_data_urls = await fetch_data(session, self_next_urls['self'])
+                    
+                    content = response_data_urls.get('data')
 
-                for j in range(data_points):
-                    if content[j]['type'] == 'entity':
+                    for j in range(len(content)):
+                        if content[j]['type'] == 'entity':
+                            values = {}
+                            
+                            output, col_not_found = self.get_project_details(data=content[j], values=values)
+                            output, col_not_found = self.get_user_details(response_data=content[j], columns=col_not_found, values=values)
+                            
+                            output_df = pd.DataFrame(output)
+                            dataframe_list.append(output_df)
 
-                        values = {}
-                        
-                        output, col_not_found = self.get_project_details(data= content[j],
-                                                                         values= values)
-                        # get user details
-                        output, col_not_found = self.get_user_details(response_data= content[j], 
-                                                                      columns= col_not_found, 
-                                                                      values= values)
-                        output_df = pd.DataFrame(output)
-                        dataframe = pd.concat([dataframe, output_df])
+                    i += 1
+                    if 'next' in self_next_urls:
+                        url = response_data_urls.get('links')['next']
+                    else:
+                        break
 
-                i += 1
-                if 'next' in self_next_urls:
-                    self_url = response_data_urls.json().get('links')['self']
-                    next_url = response_data_urls.json().get('links')['next']
-                    url = next_url
-                    save_text_to_csv(url, filename= filename)
-                else:
-                    break
-            
-            return dataframe
-      
+                dataframe = pd.concat(dataframe_list, ignore_index=True)
+                return dataframe
+
         except Exception as e:
             logging.error("[ERROR] Error occurred in exporting data from ELN")
             raise ELNException(e, sys)

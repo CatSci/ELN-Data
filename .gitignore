@@ -2,8 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
-artifact
-data-extracted
+artifact/
+data-extracted/
+test_json_data/
+test/
 
 # C extensions
 *.so
